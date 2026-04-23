@@ -1,6 +1,6 @@
 # It will print test passed
 
-status_code = "200"
+status_code = 200
 
 if status_code == 200:
     print("Testcase passed")

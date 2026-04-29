@@ -14,3 +14,8 @@ def user_data(base_url):
 def all_users(base_url):
     response = requests.get(f"{base_url}/users")
     return response.json()
+
+@pytest.fixture(scope="session")
+def single_post(base_url):
+    response =requests.get(f"{base_url}/posts/1")
+    return response.json()
